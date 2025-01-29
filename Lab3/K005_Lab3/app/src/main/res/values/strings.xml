@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">K005_Lab3</string>
+    <string-array name="options">
+        <item>Abc Xyz</item>
+        <item>8169752724</item>
+        <item>jal.bafana54@nmims.in</item>
+        <item>Google Search</item>
+        <item>Android Tutorial</item>
+    </string-array>
+</resources>
