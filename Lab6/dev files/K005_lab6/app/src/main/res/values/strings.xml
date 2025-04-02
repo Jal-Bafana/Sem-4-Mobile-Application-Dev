@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">K005_lab6</string>
+    <string-array name="colors_array">
+        <item>Black</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Yellow</item>
+    </string-array>
+</resources>
