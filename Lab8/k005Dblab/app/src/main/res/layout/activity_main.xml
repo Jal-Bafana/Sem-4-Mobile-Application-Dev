@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="0"
+        android:stretchColumns="1">
+        <TableRow android:padding="5dip">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_span = "2"
+                android:gravity="center_horizontal"
+                android:text="Student Details"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:text="Enter Roll No: "/>
+            <EditText
+                android:id="@+id/txt_roll"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:hint="Roll No"
+                android:padding="5dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:text="Enter Name: "/>
+            <EditText
+                android:id="@+id/txt_name"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:hint="name"
+                android:padding="5dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginLeft="10dp"
+                android:text="Enter Marks "/>
+            <EditText
+                android:id="@+id/txt_marks"
+                android:layout_column="1"
+                android:layout_marginLeft="10dp"
+                android:hint="marks"
+                android:padding="5dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="40dp">
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_add"
+                android:onClick="add"
+                android:text="Add"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="delete"
+                android:text="Delete"
+                android:id="@+id/btn_delete"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modify"
+                android:onClick="modify"
+                android:id="@+id/btn_modify"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View"
+                android:onClick="view"
+                android:id="@+id/btn_view"/>
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:onClick="viewall"
+                android:layout_span="2"
+                android:id="@+id/btn_viewall"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
